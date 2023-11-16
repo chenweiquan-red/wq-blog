@@ -11,3 +11,6 @@ icon: lightbulb
 
 - [RocketMq与Kafka选型(两种MQ的对比)](rocketmq/RocketMq与Kafka选型.md)
 
+### k8s相关内容
+
+- [k8s之pvc](k8s/K8s之pvc.md)

@@ -5,11 +5,11 @@ export default defineUserConfig({
   base: "/",
 
   locales: {
-    "/": {
-      lang: "en-US",
-      title: "WQ-KNOWLEDGE",
-      description: "A knowledge for WQ",
-    },
+    // "/": {
+    //   lang: "en-US",
+    //   title: "WQ-KNOWLEDGE",
+    //   description: "A knowledge for WQ",
+    // },
     "/zh/": {
       lang: "zh-CN",
       title: "WQ-知识库",

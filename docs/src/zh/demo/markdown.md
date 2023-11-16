@@ -170,7 +170,7 @@ npm i -D vuepress-theme-hope
 #### 卡片
 
 ```card
-title: Mr.Hope
+title: WQ
 desc: Where there is light, there is hope
 logo: https://mrhope.site/logo.svg
 link: https://mrhope.site
@@ -320,7 +320,7 @@ span {
 
 #### 样式化
 
-向 Mr.Hope 捐赠一杯咖啡。 _Recommended_
+向 WQ 捐赠一杯咖啡。 _Recommended_
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/stylize.html)
 

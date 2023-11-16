@@ -190,7 +190,7 @@ Support setting color scheme and size
 #### Card
 
 ```card
-title: Mr.Hope
+title: WQ
 desc: Where there is light, there is hope
 logo: https://mrhope.site/logo.svg
 link: https://mrhope.site
@@ -340,7 +340,7 @@ span {
 
 #### Stylize
 
-Donate Mr.Hope a cup of coffee. _Recommended_
+Donate WQ a cup of coffee. _Recommended_
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/stylize.html)
 

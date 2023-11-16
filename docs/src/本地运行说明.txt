@@ -1,0 +1,2 @@
+ 1、随便找个本地目录初始化一下项目：npm init vuepress-theme-hope docs
+ 2、运行成功后需要替换docs目录即可

@@ -4,7 +4,7 @@ export const zhSidebar = sidebar({
   "/zh/": [
     "",
     {
-      text: "示例",
+      text: "精选",
       icon: "laptop-code",
       prefix: "demo/",
       link: "demo/",

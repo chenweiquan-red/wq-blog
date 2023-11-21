@@ -1,5 +1,5 @@
 ---
-title: 主要功能与配置演示
+title: 精选内容
 index: false
 icon: laptop-code
 category:
@@ -7,4 +7,4 @@ category:
 ---
 
 ## 目录
-- [加密展示](encrypt.md)
+- [加密展示](DesignPattern/encrypt.md)

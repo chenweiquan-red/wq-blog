@@ -60,6 +60,8 @@ export default hopeTheme({
     config: {
       "/demo/encrypt.html": ["1234"],
       "/zh/demo/encrypt.html": ["1234"],
+      "/zh/demo/encrypt2.html": ["1234"],
+      "/zh/demo/encryptChain.html": ["1234"],
     },
   },
 

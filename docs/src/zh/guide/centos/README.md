@@ -1,5 +1,5 @@
 ---
-title: centos 知识
+title: centos
 icon: lightbulb
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: RocketMQ
+title: rocketMQ
 icon: lightbulb
 ---
 

@@ -44,3 +44,19 @@ FullGc后内存还是不够发生OOM
 ![](https://wqknowledge.oss-cn-shenzhen.aliyuncs.com/java/jvm%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg)
 
 
+# 2、Jvm常用命令
+```shell
+1、jps 查看进程
+2、jstat
+ jstat -gc 15744 ## 查看GC信息，Jvm内存占用情况
+
+3、jmap
+ ## 打印的信息分别为：共享对象的起始地址、映射大小、共享对象路径的全程。
+ jmap 15744 ## 主要用于打印指定java进程的共享对象内存映射或堆内存细节 
+ 
+ jmap -heap pid  ## 查看堆使用情况
+ map -histo pid  ## 查看堆中对象数量和大小
+ 
+```
+
+

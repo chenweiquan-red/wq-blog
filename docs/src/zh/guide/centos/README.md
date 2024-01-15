@@ -59,13 +59,20 @@ umount /home # 取消挂载后才去做分区容量缩小
 #特别说明，/dev/cl/home 和 /dev/cl/root是指逻辑分区路径（和文件系统的命名不一样），查看命令为：
 lvdisplay
 
-lvreduce -L 1G /dev/cl/home  # 将home分区设置为1G
-
+# 以下的三条命令的区别一定要注意，理论上只要运行其中之一就可以
+lvreduce -L 1G /dev/cl/home  # 将home分区减少到1G !!!!!
+lvreduce -L -1G /dev/cl/home  # 将home分区减少1G ！！！！
 lvextend -l +100%FREE /dev/cl/root # 将/home分区多出来的所有空闲空间都分配给root
 
-xfs_growfs /dev/mapper/cl-root # 使用 xfs_growfs 命令热扩容至 /root,此命令只使用xfs类型的分区
 
-# 注意注意，最后，将/etc/fstab里的 /home挂载项取消掉！！！！
+# 特别说明：linux 文件系统类型有两种：xfs和ext，这两种文件系统扩容的命令不太一样，且xfs是不支持减少
+
+# ext 文件系统实测命令：
+resize2fs /dev/mapper/centos-home            #执行调整
+# xfs 文件系统实测命令：
+xfs_growfs /dev/mapper/cl-root
+
+# 最后，将/etc/fstab里的 /home挂载项取消掉！！！！
 
 ```
 ![](https://oss-cwq.oss-rg-china-mainland.aliyuncs.com/centos/mount_home.png)

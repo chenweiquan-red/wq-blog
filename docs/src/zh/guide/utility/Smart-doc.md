@@ -1,4 +1,7 @@
-# Smart-doc说明文档
+---
+title: SMART-DOC
+icon: fire
+---
 ### smart-doc是一个无侵入性的框架
 
 ### 1、简述

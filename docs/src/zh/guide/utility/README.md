@@ -1,5 +1,5 @@
 ---
-title: utility
+title: UTILITY
 icon: lightbulb
 ---
 

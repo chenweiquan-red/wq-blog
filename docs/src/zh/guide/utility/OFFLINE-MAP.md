@@ -1,4 +1,7 @@
-# OFFLINE-MAP
+---
+title: OFFLINE-MAP
+icon: fire
+---
 ### OFFLINE-MAP是一个离线地图
 
 #### 百度离线地图

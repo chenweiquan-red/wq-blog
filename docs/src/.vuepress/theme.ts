@@ -59,9 +59,9 @@ export default hopeTheme({
   encrypt: {
     config: {
       "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt2.html": ["1234"],
-      "/zh/demo/encryptChain.html": ["1234"],
+      "/zh/demo/DesignPattern/encrypt.html": ["1234"],
+      "/zh/demo/DesignPattern/encrypt2.html": ["1234"],
+      "/zh/demo/DesignPattern/encryptChain.html": ["1234"],
     },
   },
 

@@ -62,6 +62,7 @@ export default hopeTheme({
       "/zh/demo/DesignPattern/encrypt.html": ["1234"],
       "/zh/demo/DesignPattern/encrypt2.html": ["1234"],
       "/zh/demo/DesignPattern/encryptChain.html": ["1234"],
+      "/zh/demo/DesignPattern/factory.html": ["1234"],
     },
   },
 

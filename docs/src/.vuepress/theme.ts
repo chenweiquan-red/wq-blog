@@ -7,7 +7,7 @@ export default hopeTheme({
 
   author: {
     name: "WQ",
-    url: "https://mrhope.site",
+    url: "https://github.com/chenweiquan-red",
   },
 
   iconAssets: "fontawesome-with-brands",

@@ -6,6 +6,12 @@ icon: fire
 ### vsftp 简单介绍
 
 #### vsftp 有三种用户模式
+
+```shell
+# 首先安装ftp环境
+yum install vsftpd
+```
+
 ::: tabs
 @tab:active  匿名用户模式
 

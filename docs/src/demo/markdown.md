@@ -192,8 +192,8 @@ Support setting color scheme and size
 ```card
 title: WQ
 desc: Where there is light, there is hope
-logo: https://mrhope.site/logo.svg
-link: https://mrhope.site
+logo: https://github.com/chenweiquan-red/logo.svg
+link: https://github.com/chenweiquan-red
 color: rgba(253, 230, 138, 0.15)
 ```
 
@@ -391,7 +391,7 @@ const msg = ref("Hello World!");
 
 ## Slide 1
 
-A paragraph with some text and a [link](https://mrhope.site)
+A paragraph with some text and a [link](https://github.com/chenweiquan-red)
 
 ---
 

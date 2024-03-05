@@ -161,6 +161,16 @@ chroot_local_user=YES
 chmod o+w /var/www/html -R
 ```
 
+ <Badge text="
+ 注意： 如果登录失败！提示：500 OOPS: cannot locate user entry:vsftpd
+ 
+请根据实际操作一下命令：
+ groupadd vsftpd
+ adduser -g vsftpd -s /sbin/nologin vsftpd
+ systemctl restart vsftpd
+
+" type="danger" vertical="middle" />
+
 :::
 
 

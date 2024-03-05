@@ -160,18 +160,18 @@ chroot_local_user=YES
 ```shell
 chmod o+w /var/www/html -R
 ```
-
- <Badge text="
- 注意： 如果登录失败！提示：500 OOPS: cannot locate user entry:vsftpd
- 
-请根据实际操作一下命令：
- groupadd vsftpd
- adduser -g vsftpd -s /sbin/nologin vsftpd
- systemctl restart vsftpd
-
-" type="danger" vertical="middle" />
-
 :::
 
+注意： 
+1、如果登录失败！提示：500 OOPS: cannot locate user entry:vsftpd
+```shell
+groupadd vsftpd 
+adduser -g vsftpd -s /sbin/nologin vsftpd 
+systemctl restart vsftpd
+```
 
+2、如果上传文件失败
+```shell
+setsebool allow_ftpd_full_access on
+```
 

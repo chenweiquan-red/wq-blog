@@ -175,3 +175,29 @@ systemctl restart vsftpd
 setsebool allow_ftpd_full_access on
 ```
 
+完整的vsftpd.conf
+```text
+write_enable=YES
+dirmessage_enable=YES
+xferlog_enable=YES
+connect_from_port_20=YES
+xferlog_std_format=YES
+listen=YES
+userlist_enable=YES
+tcp_wrappers=YES
+allow_writeable_chroot=YES
+guest_enable=YES
+guest_username=hhdlink001
+pam_service_name=vsftpd
+local_enable=YES
+local_umask=077
+chroot_local_user=YES
+virtual_use_local_privs=YES
+user_config_dir=/etc/vsftpd/vsftpd_virusers
+
+pasv_enable=YES
+pasv_max_port=24600
+pasv_min_port=24500
+
+```
+

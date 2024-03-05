@@ -175,6 +175,12 @@ systemctl restart vsftpd
 setsebool allow_ftpd_full_access on
 ```
 
+3、如果新增虚拟用户失败，提示：
+db_load: BDB5090 unexpected end of input data or key/data pair 
+db_load: BDB5079 odd number of key/data pairs
+
+可以在虚拟用户列表最后加回车
+
 完整的vsftpd.conf
 ```text
 write_enable=YES
@@ -187,7 +193,7 @@ userlist_enable=YES
 tcp_wrappers=YES
 allow_writeable_chroot=YES
 guest_enable=YES
-guest_username=hhdlink001
+guest_username=vsftpd
 pam_service_name=vsftpd
 local_enable=YES
 local_umask=077

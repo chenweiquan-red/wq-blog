@@ -61,6 +61,18 @@ docker push 192.168.10.249:85/iot/hhd-link-iot-device:v1.0.0-SNAPSHOT
 
 ```
 
+### 3、推送镜像到阿里云上
+```shell
+docker login --username=1881842*** -p 1****@ registry.cn-shenzhen.aliyuncs.com
+
+docker build -t hhd-link-iot-data:v1.0.0-SNAPSHOT .
+
+docker tag hhd-link-iot-data:v1.0.0-SNAPSHOT registry.cn-shenzhen.aliyuncs.com/sz_hhd/shenzhen_aliyun_harbor:hhd-link-iot-data-v1.0.0-SNAPSHOT
+docker push registry.cn-shenzhen.aliyuncs.com/sz_hhd/shenzhen_aliyun_harbor:hhd-link-iot-data-v1.0.0-SNAPSHOT
+
+
+```
+
 
 
 

@@ -220,6 +220,8 @@ sha1sum CDH-6.2.0-1.cdh6.2.0.p0.967373-el7.parcel | awk '{ print $1 }' > CDH-6.2
 
 # 打开server服务:
 service cloudera-scm-server start
+service cloudera-scm-agent start
+
 
 # 踩坑注意！jdk需要软连接到具体目录下
 mkdir -p /usr/java

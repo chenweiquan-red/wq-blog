@@ -219,8 +219,8 @@ sha1sum CDH-6.2.0-1.cdh6.2.0.p0.967373-el7.parcel | awk '{ print $1 }' > CDH-6.2
 /opt/cloudera/cm/schema/scm_prepare_database.sh mysql cmserver cmserveruser Yyf5211314!
 
 # 打开server服务:
-service cloudera-scm-server start
-service cloudera-scm-agent start
+systemctl restart cloudera-scm-agent
+systemctl restart cloudera-scm-server
 
 
 # 踩坑注意！jdk需要软连接到具体目录下

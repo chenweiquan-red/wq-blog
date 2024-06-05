@@ -60,9 +60,10 @@ export default hopeTheme({
     config: {
       "/demo/encrypt.html": ["1234"],
       "/zh/demo/DesignPattern/encrypt.html": ["1234"],
-      "/zh/demo/DesignPattern/encrypt2.html": ["1234"],
+      "/zh/demo/DesignPattern/strategy.html": ["1234"],
       "/zh/demo/DesignPattern/encryptChain.html": ["1234"],
       "/zh/demo/DesignPattern/factory.html": ["1234"],
+      "/zh/demo/解决方案/秒杀系统方案.html": ["1234"],
     },
   },
 

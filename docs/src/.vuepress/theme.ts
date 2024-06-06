@@ -64,6 +64,7 @@ export default hopeTheme({
       "/zh/demo/DesignPattern/encryptChain.html": ["1234"],
       "/zh/demo/DesignPattern/factory.html": ["1234"],
       "/zh/demo/解决方案/秒杀系统方案.html": ["1234"],
+      "/zh/demo/解决方案/限流方案.html": ["1234"]
     },
   },
 

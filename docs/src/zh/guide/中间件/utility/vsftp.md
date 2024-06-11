@@ -80,21 +80,27 @@ vim /etc/vsftpd/vsftpd.conf
 ```
 
 ```shell
-#禁用匿名用户登录
-anonymous_enable=NO
-
-#启用虚拟用户登陆,需添加
+write_enable=YES
+dirmessage_enable=YES
+xferlog_enable=YES
+connect_from_port_20=YES
+xferlog_std_format=YES
+listen=YES
+userlist_enable=YES
+tcp_wrappers=YES
+allow_writeable_chroot=YES
 guest_enable=YES
-
-#指定虚拟用户映射的本地用户,需添加
-guest_username=virftp
-
-#设置各虚拟用户的配置文件目录
+guest_username=vsftpd
+pam_service_name=vsftpd
+local_enable=YES
+local_umask=077
+chroot_local_user=YES
+virtual_use_local_privs=YES
 user_config_dir=/etc/vsftpd/vsftpd_virusers
 
-#指定使用pam验证的配置文件,已存在不用修改
-pam_service_name=vsftpd
-ftp_username=hhdlink001
+pasv_enable=YES
+pasv_max_port=24600
+pasv_min_port=24500
 ```
 
 添加虚拟用户
@@ -132,27 +138,15 @@ account    required     pam_userdb.so   db=/etc/vsftpd/vir_user
 ```shell
 mkdir /etc/vsftpd/vsftpd_virusers/
 vim /etc/vsftpd/vsftpd_virusers/hhdlink001
+```
 
-# 输入
-#虚拟用户的上传权限
+```shell
 anon_upload_enable=YES
-
-#虚拟用户创建文件目录权限
 anon_mkdir_write_enable=YES
-
-#虚拟用户改名等其他权限
 anon_other_write_enable=YES
-
-#设置在ftp中新建和上传的文件的初始权限
 anon_umask=022
-
-#设置虚拟用户登陆后的目录
 local_root=/var/www/html
-
-#设置启用用户不能切换目录后的上传,删除,改名等权限
 allow_writeable_chroot=YES
-
-#启用用户登录后不能切上一级目录
 chroot_local_user=YES
 ```
 

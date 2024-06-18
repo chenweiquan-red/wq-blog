@@ -1,8 +1,11 @@
----
-title: Jvm堆内存
-icon: circle-info
----
 
+---
+icon: fire
+category:
+- Jvm堆内存
+  tag:
+- jvm
+---
 
 # 1、Jvm堆内存
 

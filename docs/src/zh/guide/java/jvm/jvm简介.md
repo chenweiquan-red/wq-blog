@@ -1,9 +1,10 @@
 ---
+title: Jvm简介
 icon: fire
 category:
-  - JVM简介
-tag:
   - jvm
+tag:
+  - Jvm简介
 ---
 
 ### 1、JVM内存分布（1.8）

@@ -67,7 +67,9 @@ NM_CONTROLLED="no"
 #hw="6c:0b:84:be:14:3c"
 ```
 修改后启动：
+
 ifconfig eno1 down
+
 ifconfig eno1 up
 
-最后重启：service networkstart
+最后重启：service network start

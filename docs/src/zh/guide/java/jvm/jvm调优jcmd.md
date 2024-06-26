@@ -25,6 +25,7 @@ tag:
      jcmd 15008 VM.flags # 获取启动参数
 ```
 
+![](https://wqknowledge.oss-cn-shenzhen.aliyuncs.com/jvm/jcmdhelp.png)
 
 #### 2、jstatd：远程主机信息收集
 之前的指令只涉及监控本机的Java应用程序，而在这些工具中，

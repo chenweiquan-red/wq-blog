@@ -12,17 +12,17 @@ tag:
 
 1.1、 在JDK1.7以后，新增了一个命令行工具jcmd。它是一个多功能的工具，可以用来实现前面除了jstat之外所有命令的功能，比如用它来导出堆、内存使用、查看Java进程、导出线程信息、执行GC、JVM运行时间等。jcmd拥有jmap的大部分功能，并且官方也推荐使用jcmd命令代替jmap命令。
 ```shell
-     jcmd 15008  help # 查看jcmd支持的相关操作，如下图1
-     
-     jcmd 15008 VM.uptime # 查看jvm启动时间
-     
-     jcmd 15008 Thread.print # 打印线程堆栈信息
-     
-     jcmd 15008 GC.class_histogram # 查看系统中类的统计信息
-     
-     jcmd 15008 GC.heap_dump D:\d.hprof # 和jmap dump 功能差不多，也会进行一次FGC？
-     
-     jcmd 15008 VM.flags # 获取启动参数
+ jcmd 15008  help # 查看jcmd支持的相关操作，如下图1
+ 
+ jcmd 15008 VM.uptime # 查看jvm启动时间
+ 
+ jcmd 15008 Thread.print # 打印线程堆栈信息
+ 
+ jcmd 15008 GC.class_histogram # 查看系统中类的统计信息
+ 
+ jcmd 15008 GC.heap_dump D:\d.hprof # 和jmap dump 功能差不多，也会进行一次FGC？
+ 
+ jcmd 15008 VM.flags # 获取启动参数
 ```
 
 ![](https://wqknowledge.oss-cn-shenzhen.aliyuncs.com/jvm/jcmdhelp.png)

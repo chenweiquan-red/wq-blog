@@ -334,7 +334,7 @@ module.exports = {
 
 ```shell
 docker pull registry.cn-shenzhen.aliyuncs.com/sz_public/public:zlmediakit-master
-docker run -id -p 1935:1935 -p 1935:1935/udp -p 554:554 -p 8000:8000 -p 8001:8001 -p 18081:18081 -p 10000:10000 -p 10000:10000 -p 50000-50050:50000-50050  -p 50000-50050:50000-50050/udp -v /usr/local/28181/config.ini:/opt/media/conf/config.ini registry.cn-shenzhen.aliyuncs.com/sz_public/public:zlmediakit-master
+docker run -id -p 1935:1935 -p 1935:1935/udp -p 554:554 -p 8000:8000 -p 8001:8001 -p 18081:18081 -p 10000:10000 -p 10000:10000/udp -p 50000-50050:50000-50050  -p 50000-50050:50000-50050/udp -v /usr/local/28181/config.ini:/opt/media/conf/config.ini registry.cn-shenzhen.aliyuncs.com/sz_public/public:zlmediakit-master
 ```
 
 config.ini 如下(注意secret/ip白名单/开放端口等)：

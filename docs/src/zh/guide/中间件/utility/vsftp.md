@@ -1,6 +1,10 @@
 ---
-title: VSFTP
+title: vsftp搭建
 icon: fire
+category:
+ - utility
+tag:
+ - 文档
 ---
 
 ### vsftp 简单介绍

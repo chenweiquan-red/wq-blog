@@ -1,7 +1,12 @@
 ---
-title: RocketMq与Kafka选型
-icon: circle-info
+title: RocketMQ 选型
+icon: fire
+category:
+  - RocketMQ
+tag:
+  - 选型
 ---
+
 
 # RocketMq与Kafka选型
 
